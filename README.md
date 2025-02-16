@@ -1,4 +1,1 @@
-# Jarek Mastalerczyk
-*** Urodziłem sie w Stalowej Woli, lubie zwierzeta i ludzi, ukonczylem liceum ***
-> moje urodziny sa 17 czerwca
- 
+Moja strona na której będdzie jeszcze nie wiem co dokładnie
