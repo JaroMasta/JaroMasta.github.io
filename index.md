@@ -10,14 +10,14 @@ title: Strona Główna
   </section>
 
   <section class="content">
-    {% for post in site.posts %}
-      <article class="post-item">
+    {% for project in site.projects %}
+      <article class="project-item">
         <h2>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </h2>
-        <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-        {% if post.description %}
-          <p>{{ post.description }}</p>
+        <p class="project-meta">{{ project.date | date: "%B %-d, %Y" }}</p>
+        {% if project.description %}
+          <p>{{ project.description }}</p>
         {% endif %}
       </article>
     {% endfor %}
