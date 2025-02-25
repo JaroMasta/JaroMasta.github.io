@@ -1,3 +1,25 @@
 ---
-$END$
+import Layout from '@/layouts/BlogPost.astro';
+const tags = ['astro', 'react', 'svelte', 'vue', 'web-components'];
+const description = `
+  <p class="text-left text-pblue font-bold">
+    
+  </p>
+`;
 ---
+
+<Layout
+        tags={tags}
+        icon=""
+        title="Contact information"
+        description= {description}
+        pubDate={new Date('February 02 2025')}
+>
+    <p class="text-left">
+        <b>e-mail:</b> <i>jaroslawmastalerczyk@gmail.com</i>
+        <br/>
+        <span><b> Github Account:</b> <a href="https://github.com/JaroMasta"><i>JaroMasta</i></span>
+    </p>
+
+
+</Layout>

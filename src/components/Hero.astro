@@ -1,0 +1,38 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}"
+);
+---
+
+<section class="py-20 flex md:flex-row flex-col px-4 md:px-0 gap-10 md:gap-0">
+  <div class="flex flex-col gap-6 justify-start items-start md:w-1/2">
+    <h1 class="text-pblack">Hi, my name is Jarosław Mastalerczyk or just</h1>
+    <p class="text-6xl font-bold">Jarek</p>
+    <p>
+      I am currently studying <a href="https://sylabusy.agh.edu.pl/pl/1/2/20/1/4/16/140" rel="noopener noreferrer" target="_blank"> <u> Computer Science and Intelligent Systems </u></a> at the Faculty of
+      Electrical, Automatics, Computer Science and Electronics (EAIiIB) at AGH University of Science and Technology in Krakow.
+      My interests include theater  and ice skating. ️
+    </p>
+    <a
+        rel="noopener noreferrer"
+        href="/about"
+        class="bg-pblue px-5 py-4 border-1 border-black rounded-lg shadow-card hover:shadow-hover transition"
+    >
+      More about me
+    </a>
+  </div>
+  <div
+    class="md:w-1/2 object-contain flex items-center justify-center p-10"
+  >
+    <a
+        rel="noopener noreferrer"
+        href="/contact"
+        class="bg-pgreen px-20 py-10  border-1 border-black rounded-2xl shadow-card hover:shadow-hover transition"
+
+    >
+      <h2 class="text-4xl font-bold">Contact me</h2>
+    </a>
+  </div>
+</section>

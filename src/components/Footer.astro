@@ -1,0 +1,24 @@
+---
+const today = 2025
+import { Icon } from "astro-icon/components";
+---
+
+<footer
+  class="flex flex-col items-center container mx-auto p-10 text-center gap-10 pb-40"
+>
+  <span>
+    &copy; {today} Jarosław Mastalerczyk created using <a href="https://www.jramma.com/" target="_blank" > <u> Jose Ramos'</u> </a> template.
+
+  </span>
+  Check out my github for more projects.
+  <div class="flex items-center gap-6 text-5xl">
+    <a
+      href="https://github.com/JaroMasta"
+      target="_blank"
+      class="border-1 p-1 border-black rounded-full bg-pblue shadow-card hover:shadow-hover transition"
+    >
+      <Icon name="github" />
+    </a>
+
+  </div>
+</footer>

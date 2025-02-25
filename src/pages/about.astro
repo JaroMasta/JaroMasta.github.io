@@ -1,0 +1,26 @@
+---
+import Layout from '@/layouts/BlogPost.astro';
+const tags = ['astro', 'react', 'svelte', 'vue', 'web-components'];
+const description = `
+  <p class="text-left text-pblue font-bold">
+    What I do, Projects, Experience etc.
+  </p>
+`;
+---
+
+<Layout
+	tags={tags}
+	icon=""
+	title="About Me"
+	description= {description}
+	pubDate={new Date('February 02 2025')}
+>
+	<p>
+		I am currently studying <a href="https://sylabusy.agh.edu.pl/pl/1/2/20/1/4/16/140" target="_blank">
+		Computer Science and Intelligent Systems</a> at the Faculty of Electrical,
+		Automatics, Computer Science and Electronics (EAIiIB) at AGH University of Science and Technology in Krakow.
+		My interests include theater and ice skating.
+
+	</p>
+
+</Layout>
