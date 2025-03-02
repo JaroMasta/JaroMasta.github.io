@@ -18,6 +18,57 @@ Github: https://github.com/jramma/sorollaportfolio
 - **package.json**: Lists project dependencies and scripts.
 - **tailwind.config.mjs**: Configuration file for Tailwind CSS.
 - **tsconfig.json**: TypeScript configuration file.
+## Deployment 
+The webiste runs on gh-pages branch, because githubPages allows only statically loaded websides.
+
+### Prerequisites
+- You have a local copy of your repository.
+- You have Bun installed (or use npm if preferred).
+
+### Steps to Update the Website
+
+1. **Navigate to Your Project Directory**
+   ```sh
+   cd path/to/your/repository
+   ```
+
+2. **Make Changes**
+   - Edit files as needed (HTML, CSS, Astro components, etc.).
+
+3. **Build the Project**
+   ```sh
+   bun run build
+   ```
+   This will generate the `dist` folder with the latest version of your website.
+
+4. **Deploy to GitHub Pages**
+   ```sh
+   bun run gh-pages -d dist
+   ```
+   This command publishes the contents of `dist` to the `gh-pages` branch.
+
+5. **Commit and Push Changes to GitHub**
+   ```sh
+   git add .
+   git commit -m "Update website"
+   git push origin main
+   ```
+   This ensures your repository stays up to date.
+
+6. **Check the Live Site**
+   - Visit `https://jaromasta.github.io/` to verify the changes.
+
+7. **Troubleshooting**
+- If styles or scripts are missing, check the `base` setting in `astro.config.mjs`:
+  ```js
+  export default defineConfig({
+    base: "/your-repo-name/",
+  });
+  ```
+- If deployment fails, ensure `gh-pages` is installed:
+  ```sh
+  bun add gh-pages
+  ```
 
 
 ### 🧭 /src structure
