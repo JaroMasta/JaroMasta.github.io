@@ -1,5 +1,5 @@
 ---
-title: "Markdown example"
+title: "Java poker game"
 description:
   'Java project that allows multi-player poker games. Implementation of server and player logic using robust tools.
   '
